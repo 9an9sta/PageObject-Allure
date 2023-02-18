@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Run all tests">
+
+    <listeners>
+        <listener class-name="framework.listeners.MyListener"/>
+    </listeners>
+
+    <test name="Test #0">
+        <classes>
+            <class name="ui.ZeroTest"/>
+        </classes>
+    </test>>
+
+    <test name="Test #1">
+        <classes>
+            <class name="ui.FirstTest"/>
+        </classes>
+    </test>
+
+    <test name="Test #2">
+        <classes>
+            <class name="ui.SecondTest"/>
+        </classes>
+    </test>
+
+    <test name="Test #3">
+        <classes>
+            <class name="ui.ThirdTest"/>
+        </classes>
+    </test>
+
+    <test name="Test #4">
+        <classes>
+            <class name="ui.FourTest"/>
+        </classes>
+    </test>
+
+    <test name="Test #5">
+        <classes>
+            <class name="ui.FifthTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -2,9 +2,9 @@ package ui;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-import pages.CamerasPage;
-import pages.MainPage;
-import pages.components.DesktopComponents;
+import framework.pages.CamerasPage;
+import framework.pages.MainPage;
+import framework.pages.components.DesktopComponents;
 
 import java.util.List;
 

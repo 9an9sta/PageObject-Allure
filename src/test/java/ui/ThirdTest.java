@@ -2,9 +2,9 @@ package ui;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-import pages.DesktopPage;
-import pages.MainPage;
-import pages.components.DesktopComponents;
+import framework.pages.DesktopPage;
+import framework.pages.MainPage;
+import framework.pages.components.DesktopComponents;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

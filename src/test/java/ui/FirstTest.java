@@ -2,8 +2,8 @@ package ui;
 
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
-import pages.MainPage;
-import pages.RegisterAccountPage;
+import framework.pages.MainPage;
+import framework.pages.RegisterAccountPage;
 
 public class FirstTest extends BaseTest {
 

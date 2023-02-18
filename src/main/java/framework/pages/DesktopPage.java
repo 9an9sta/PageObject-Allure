@@ -1,9 +1,9 @@
-package pages;
+package framework.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import pages.components.DesktopComponents;
+import framework.pages.components.DesktopComponents;
 
 import java.util.List;
 

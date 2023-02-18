@@ -1,4 +1,4 @@
-package pages.components;
+package framework.pages.components;
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

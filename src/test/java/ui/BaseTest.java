@@ -1,12 +1,11 @@
 package ui;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.BasePage;
+import framework.pages.BasePage;
 
 public class BaseTest {
     @BeforeMethod(alwaysRun = true)

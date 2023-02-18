@@ -2,9 +2,9 @@ package ui;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-import pages.MainPage;
-import pages.ProductPage;
-import pages.components.DesktopComponents;
+import framework.pages.MainPage;
+import framework.pages.ProductPage;
+import framework.pages.components.DesktopComponents;
 import java.util.List;
 
 public class FourTest extends BaseTest {
