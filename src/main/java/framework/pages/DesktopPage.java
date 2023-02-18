@@ -1,5 +1,6 @@
 package framework.pages;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -9,7 +10,7 @@ import java.util.List;
 
 
 import java.util.ArrayList;
-
+@Log4j2
 public class DesktopPage extends BasePage {
 
     private By desktopComponents = By.xpath("//div[@class='product-thumb']");
@@ -20,22 +21,26 @@ public class DesktopPage extends BasePage {
     private By sortBySelectCustomValue = By.xpath("//select[@id='input-sort']");
 
     public String getSortByValue(){
+        log.info("Get current sort parameter");
         return find(currentSortBySelectValue).getText();
 
     }
 
     public DesktopPage setSortByValue(String text) {
+        log.info("Set sort parameter {text}");
         Select select = new Select(find(sortBySelectCustomValue));
         select.selectByVisibleText(text);
         return this;
     }
 
     public String getShowValue(){
+        log.info("Get filter value");
         return find(currentShowSelectCount).getText();
 
     }
 
     public void setShowValue(String value){
+        log.info("Select filter value as {value}");
         Select select = new Select(find(sortBySelectValue));
         select.selectByVisibleText(value);
     }

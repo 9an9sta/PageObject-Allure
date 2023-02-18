@@ -15,7 +15,7 @@ public class Helpers {
     public static void makeScreenShot() {
         File scrFile = ((TakesScreenshot) BasePage.getDriver()).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile,
-                new File("/Users/olegdatsiuk/IdeaProjects/pageObjectLab/src/test/resources/sreenshots/"
+                new File("/Users/macpc/Downloads/PageObject/src/test/resources/screenshots"
                         + new Faker().random().hex(10) + ".png"));
     }
 

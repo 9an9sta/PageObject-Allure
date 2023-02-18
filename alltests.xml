@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Run all tests">
+
+<suite name="Test">
 
     <listeners>
         <listener class-name="framework.listeners.MyListener"/>
@@ -9,37 +10,57 @@
 
     <test name="Test #0">
         <classes>
-            <class name="ui.ZeroTest"/>
+            <class name ="ui.ZeroTest">
+                <methods>
+                    <include name = "checkAreFollowingBrandsExistOnPage"/>
+                </methods>
+            </class>
         </classes>
-    </test>>
+    </test>
 
     <test name="Test #1">
         <classes>
-            <class name="ui.FirstTest"/>
+            <class name ="ui.FirstTest">
+                <methods>
+                    <include name = "checkSuccessfulCreateAccountMessage"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
     <test name="Test #2">
         <classes>
-            <class name="ui.SecondTest"/>
+            <class name ="ui.SecondTest">
+                <methods>
+                    <include name = "checkThatPageElementAreOllShow"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
     <test name="Test #3">
         <classes>
-            <class name="ui.ThirdTest"/>
+            <class name ="ui.ThirdTest">
+                <methods>
+                    <include name = "checkThatProductSortedCorrectly"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
     <test name="Test #4">
         <classes>
-            <class name="ui.FourTest"/>
+            <class name ="ui.FourTest">
+                <methods>
+                    <include name = "checkThatPriceCorrectly"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
     <test name="Test #5">
         <classes>
-            <class name="ui.FifthTest"/>
+            <class name ="ui.FifthTest">
+                <methods>
+                    <include name = "checkCamerasPrice"/>
+                </methods>
+            </class>
         </classes>
     </test>
 

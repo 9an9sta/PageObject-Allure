@@ -1,11 +1,12 @@
 package framework.pages;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import framework.pages.components.DesktopComponents;
 import java.util.ArrayList;
 import java.util.List;
-
+@Log4j2
 public class MainPage extends BasePage{
 
     private By myAccountButton = By.xpath("//div/a//span[text()='My Account']");
@@ -23,26 +24,31 @@ public class MainPage extends BasePage{
     private By linkToBrandsPage = By.xpath("//ul[@class='list-unstyled']//a[text()='Brands']");
 
     public MainPage openMyAccount(){
+        log.info("Click on My Account");
         find(myAccountButton).click();
         return this;
     }
 
     public RegisterAccountPage selectRegisterOption(){
+        log.info("Click on Register button");
         find(registerButton).click();
         return new RegisterAccountPage();
     }
 
     public MainPage selectDesktops(){
+        log.info("Click on Desktop button");
         find(desktopButton).click();
         return this;
     }
 
     public DesktopPage selectAllDesktop(){
+        log.info("Click on All Desktop button");
         find(desktopShowAllDesktopButton).click();
         return new DesktopPage();
     }
 
     public void selectCurrency(String currency){
+        log.info("Select currency");
         find(selectCurrency).click();
         if(currency == "EUR"){
             find(selectCurrencyEUR).click();
@@ -54,6 +60,7 @@ public class MainPage extends BasePage{
     }
 
     public MainPage checkThatCurrencyIsValid(){
+        log.info("Check if currency is $");
         if(find(actualCurrentCurrency).getText() == "$"){
             return this;
         } else {
@@ -75,16 +82,19 @@ public class MainPage extends BasePage{
 
 
     public ProductPage clickOnButton(WebElement locator){
+        log.info("Click on element");
         submitByWebElement(locator);
         return new ProductPage();
     }
 
     public CamerasPage clickOnCamerasButton(){
+        log.info("Go to cameras page");
         find(camerasButton).click();
         return new CamerasPage();
     }
 
     public BrandsPage goToBrandsPage(){
+        log.info("Go to Brand page");
         submitByLocator(linkToBrandsPage);
         return new BrandsPage();
 

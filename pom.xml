@@ -16,7 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <log4j.version>2.17.2</log4j.version>
         <aspectj.version>1.9.19</aspectj.version>
-        <allure.integration.version>2.12.0</allure.integration.version>
+        <allure.integration.version>2.13.2</allure.integration.version>
     </properties>
 
     <dependencies>
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -63,6 +63,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>${log4j.version}</version>
@@ -85,9 +91,10 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.7.1</version>
+            <version>7.4.0</version>
             <scope>compile</scope>
         </dependency>
+
 
     </dependencies>
 
@@ -96,7 +103,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>3.0.0-M8</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>alltests.xml</suiteXmlFile>
