@@ -1,7 +1,16 @@
+# Intellij
 shelf/
-/workspace.xml
-/.idea/
-/target/
-.log
-.allure
+.idea/
+*.iml
+*.iws
+
+#Allure
+.allure/
+
+# Mac
 .DS_Store
+
+# Maven
+log/
+.log
+target/
