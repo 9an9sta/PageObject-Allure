@@ -1,0 +1,7 @@
+shelf/
+/workspace.xml
+/.idea/
+/target/
+.log
+.allure
+.DS_Store
