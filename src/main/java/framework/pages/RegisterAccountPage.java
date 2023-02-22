@@ -76,7 +76,7 @@ public class RegisterAccountPage extends BasePage{
     @Step("Get current page URL")
     public static String getCurrentPageURl(){
         log.info("Get current page URL");
-        return driver.getCurrentUrl();
+        return BasePage.getDriverThreadLocal().get().getCurrentUrl();
     }
 
 

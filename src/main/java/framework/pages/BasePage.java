@@ -11,14 +11,18 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
-    protected static WebDriver driver;
+    private static final ThreadLocal<WebDriver> DRIVER_THREAD_LOCAL = new ThreadLocal<>();
 
-    public static WebDriver getDriver() {
-        return driver;
+    public static ThreadLocal<WebDriver> getDriverThreadLocal() {
+        return DRIVER_THREAD_LOCAL;
     }
 
-    public static void setDriver(WebDriver driver) {
-        BasePage.driver = driver;
+    public static void setDriverThreadLocal(WebDriver driver) {
+        DRIVER_THREAD_LOCAL.set(driver);
+    }
+
+    public static WebDriver getDriver() {
+        return DRIVER_THREAD_LOCAL.get();
     }
 
 
@@ -33,12 +37,12 @@ public class BasePage {
     public void submitByLocator(By locator) {
         WebElement element = find(locator);
 
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        JavascriptExecutor executor = (JavascriptExecutor) getDriver();
         executor.executeScript("arguments[0].click()", element);
     }
 
     public void submitByWebElement(WebElement element){
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        JavascriptExecutor executor = (JavascriptExecutor) getDriver();
         executor.executeScript("arguments[0].click()", element);
 
     }

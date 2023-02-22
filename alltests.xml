@@ -11,9 +11,6 @@
     <test name="Test #0">
         <classes>
             <class name ="ui.ZeroTest">
-                <methods>
-                    <include name = "checkAreFollowingBrandsExistOnPage"/>
-                </methods>
             </class>
         </classes>
     </test>
@@ -21,45 +18,30 @@
     <test name="Test #1">
         <classes>
             <class name ="ui.FirstTest">
-                <methods>
-                    <include name = "checkSuccessfulCreateAccountMessage"/>
-                </methods>
             </class>
         </classes>
     </test>
     <test name="Test #2">
         <classes>
             <class name ="ui.SecondTest">
-                <methods>
-                    <include name = "checkThatPageElementAreOllShow"/>
-                </methods>
             </class>
         </classes>
     </test>
     <test name="Test #3">
         <classes>
             <class name ="ui.ThirdTest">
-                <methods>
-                    <include name = "checkThatProductSortedCorrectly"/>
-                </methods>
             </class>
         </classes>
     </test>
     <test name="Test #4">
         <classes>
             <class name ="ui.FourTest">
-                <methods>
-                    <include name = "checkThatPriceCorrectly"/>
-                </methods>
             </class>
         </classes>
     </test>
     <test name="Test #5">
         <classes>
             <class name ="ui.FifthTest">
-                <methods>
-                    <include name = "checkCamerasPrice"/>
-                </methods>
             </class>
         </classes>
     </test>

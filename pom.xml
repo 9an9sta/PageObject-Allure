@@ -17,6 +17,11 @@
         <log4j.version>2.17.2</log4j.version>
         <aspectj.version>1.9.19</aspectj.version>
         <allure.integration.version>2.13.2</allure.integration.version>
+        <!--    default value-->
+        <suite>alltests.xml</suite>
+        <browserWidth>1920</browserWidth>
+        <browserHeight>1080</browserHeight>
+        <browser>CHROME</browser>
     </properties>
 
     <dependencies>
@@ -111,6 +116,17 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+
+                    <systemPropertyVariables>
+                        <browser.width>${browserWidth}</browser.width>
+                        <browser.height>${browserHeight}</browser.height>
+                        <browser.type>${browser}</browser.type>
+                    </systemPropertyVariables>
+
+                    <parallel>tests</parallel>
+                    <threadCount>3</threadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+
                 </configuration>
                 <dependencies>
                     <dependency>
