@@ -4,13 +4,11 @@ shelf/
 *.iml
 *.iws
 
-#Allure
-.allure/
 
 # Mac
 .DS_Store
 
 # Maven
 log/
-.log
+*.log
 target/

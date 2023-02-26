@@ -4,46 +4,46 @@
 
 <suite name="Test">
 
-    <listeners>
-        <listener class-name="framework.listeners.MyListener"/>
-    </listeners>
+  <listeners>
+    <listener class-name="framework.listeners.MyListener"/>
+  </listeners>
 
-    <test name="Test #0">
-        <classes>
-            <class name ="ui.ZeroTest">
-            </class>
-        </classes>
-    </test>
+  <test name="Test #0">
+    <classes>
+      <class name="ui.ZeroTest">
+      </class>
+    </classes>
+  </test>
 
-    <test name="Test #1">
-        <classes>
-            <class name ="ui.FirstTest">
-            </class>
-        </classes>
-    </test>
-    <test name="Test #2">
-        <classes>
-            <class name ="ui.SecondTest">
-            </class>
-        </classes>
-    </test>
-    <test name="Test #3">
-        <classes>
-            <class name ="ui.ThirdTest">
-            </class>
-        </classes>
-    </test>
-    <test name="Test #4">
-        <classes>
-            <class name ="ui.FourTest">
-            </class>
-        </classes>
-    </test>
-    <test name="Test #5">
-        <classes>
-            <class name ="ui.FifthTest">
-            </class>
-        </classes>
-    </test>
+  <test name="Test #1">
+    <classes>
+      <class name="ui.FirstTest">
+      </class>
+    </classes>
+  </test>
+  <test name="Test #2">
+    <classes>
+      <class name="ui.SecondTest">
+      </class>
+    </classes>
+  </test>
+  <test name="Test #3">
+    <classes>
+      <class name="ui.ThirdTest">
+      </class>
+    </classes>
+  </test>
+  <test name="Test #4">
+    <classes>
+      <class name="ui.FourTest">
+      </class>
+    </classes>
+  </test>
+  <test name="Test #5">
+    <classes>
+      <class name="ui.FifthTest">
+      </class>
+    </classes>
+  </test>
 
 </suite>
